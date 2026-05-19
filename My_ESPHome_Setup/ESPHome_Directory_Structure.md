@@ -2,7 +2,8 @@
 
 ## Sources
 
-* [ESPHome Coding practices, tips and tricks, Tutorial 1, Foundation Part 2, Folder](https://www.youtube.com/watch?v=G9WRg6jk7xk&t=899s "Home Automator")
+* Folders for ESPHome
+  * [ESPHome Coding practices, tips and tricks, Tutorial 1, Foundation Part 2, 14:59 - Folders](https://www.youtube.com/watch?v=G9WRg6jk7xk&t=899s "Home Automator")
 
 ## My default layout for ESPHome in Home Assistant
 
