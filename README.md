@@ -20,4 +20,13 @@
 
 ### Demofiles
 
-/homeassistant/esphome/boards/esp32/c3_mini_espressif.yaml
+* [Common Core File](./My_ESPHome_Setup/Demofiles.md#common-core-file)
+  * [settings.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommoncoresettingsyaml)
+* [Common Network File](./My_ESPHome_Setup/Demofiles.md#common-network-file)
+  * [webserver.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkwebserveryaml)
+  * [wifi.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkwifiyaml)
+  * [bluetooth_off.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkbluetooth_offyaml)
+* [The Board File](./My_ESPHome_Setup/Demofiles.md#the-cpu-board-file)
+  * [c3_mini_espressif.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomeboardsesp32c3_mini_espressifyaml)
+* [The Device File](./My_ESPHome_Setup/Demofiles.md#the-device-file)
+  * [esphome_device_tutorial.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomeesphome_device_tutorialyaml)
