@@ -4,7 +4,7 @@
 * Before you start using this guide, watch at least these videos :
   * [home-automator - ESPHome Coding Practices Tips and Tricks](./Sources/YouTube_Videos.md#home-automator)
 * and articles:
-  * [olegtarasov - packages and substitutions tutorial](./Sources/GitHub_Artikler.md#olegtarasov)
+  * [olegtarasov - packages and substitutions tutorial](https://olegtarasov.me/esphome-packages-substitutions-tutorial/)
   * [ESPHome.io - Packages](https://esphome.io/components/packages/)
 
 ## Sources
