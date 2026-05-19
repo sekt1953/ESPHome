@@ -1,2 +1,16 @@
 # ESPHome
-Place where i will place my ESPHome project
+
+Place where i will place my new ESPHome project, which is heavily inspired by the [Home Automator](https://www.youtube.com/@homeautomatorza/featured) video series ["Coding Practices, Tips and Tricks"](https://www.youtube.com/playlist?list=PLJ3MNJX_MOUnMWzUNDatN3LWAN8l99v5I)
+
+## Sources
+
+* [ESPHome Dokumentation](./Kilder/ESPHome_Dokumentation.md)
+* [ESP32 Development Boards](./Kilder/ESP32_Development_Boards.md)
+* [YouTube Videos to learn from](./Kilder/YouTube_Videos.md)
+* [GitHub Artikler and more](./Kilder/GitHub_Artikler.md)
+
+## My ESPHome Setup
+
+
+
+
