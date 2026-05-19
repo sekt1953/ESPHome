@@ -4,10 +4,10 @@ Place where i will place my new ESPHome project, which is heavily inspired by th
 
 ## Sources
 
-* [ESPHome Dokumentation](./Kilder/ESPHome_Dokumentation.md)
-* [ESP32 Development Boards](./Kilder/ESP32_Development_Boards.md)
-* [YouTube Videos to learn from](./Kilder/YouTube_Videos.md)
-* [GitHub Artikler and more](./Kilder/GitHub_Artikler.md)
+* [ESPHome Dokumentation](./Sources/ESPHome_Dokumentation.md)
+* [ESP32 Development Boards](./Sources/ESP32_Development_Boards.md)
+* [YouTube Videos to learn from](./Sources/YouTube_Videos.md)
+* [GitHub Artikler and more](./Sources/GitHub_Artikler.md)
 
 ## My ESPHome Setup
 
