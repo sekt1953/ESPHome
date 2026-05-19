@@ -18,3 +18,6 @@
 
 * [ESPHome Directory Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
 
+### Demofiles
+
+/homeassistant/esphome/boards/esp32/c3_mini_espressif.yaml

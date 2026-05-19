@@ -35,15 +35,6 @@
 
 ## Some standard Files
 
-### .gitignore
-
-```code
-# Gitignore settings for ESPHome
-# You can modify this file to suit your needs.
-/.esphome/
-/secrets.yaml
-```
-
 ### secrets.yaml helper file
 
 ```yaml
@@ -84,4 +75,13 @@ ap_password: "password"
 gateway_address: 192.168.1.1
 subnet_address: 255.255.255.0
 dns_address: 192.168.1.1
+```
+
+### /homeassistant/esphome/.gitignore
+
+```code
+# Gitignore settings for ESPHome
+# You can modify this file to suit your needs.
+/.esphome/
+/secrets.yaml
 ```
