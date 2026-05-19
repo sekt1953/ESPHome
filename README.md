@@ -11,6 +11,5 @@ Place where i will place my new ESPHome project, which is heavily inspired by th
 
 ## My ESPHome Setup
 
-
-
+* [ESPHome Directory Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
 
