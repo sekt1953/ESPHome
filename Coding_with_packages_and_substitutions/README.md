@@ -18,7 +18,7 @@
 
 ## ESPHome Setup
 
-### Folder
+### Folder & Files Overview
 
 ```txt
 homeassistant "set som CONFIG i Studio Code Server"
