@@ -14,11 +14,13 @@
 * [YouTube Videos to learn from](./Sources/YouTube_Videos.md)
 * [GitHub Artikler and more](./Sources/GitHub_Artikler.md)
 
-## My ESPHome Setup
+## My ESPHome Tutorial Setup
+
+### Folder
 
 * [ESPHome Directory Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
 
-### Demofiles
+### Files
 
 * [Common Core File](./My_ESPHome_Setup/Demofiles.md#common-core-file)
   * [settings.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommoncoresettingsyaml)
