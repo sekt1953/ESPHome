@@ -1,0 +1,37 @@
+################################################################################
+# OLIMEX  ESP32-POE Lan, WiFi, I2C & SPI
+################################################################################
+# Usage:
+#   Add the following code to package section in the device file
+# ------------------------------------------------------------------------------
+# packages:
+#   board: !include boards/esp32/poe_olimex
+# ------------------------------------------------------------------------------
+# Author: Svenn-Erik K. Thomsen
+# Github: https://github.com/sekt1953/
+# Version: 1.0.0
+# Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+# ------------------------------------------------------------------------------
+# Notes:
+#     - 
+# ------------------------------------------------------------------------------
+# Referance: 
+#     - https://www.olimex.com/Products/IoT/ESP32/ESP32-POE/open-source-hardware
+#     - https://github.com/OLIMEX/ESP32-POE/blob/master/DOCUMENTS/ESP32-POE-PINOUT.png
+# Spec: 
+#     - ESP32-WROOM-32E
+#     - 2.4 GHz Wi­Fi (802.11 b/g/n) and Bluetooth 5 module
+#     - 4 MB flash
+#     - The PoE is currently handled by TPS2375PW Max 4W
+#     - 1 × I2C
+#     - 1 × I2S
+#     - 3 x SPI
+#     - 2 x UART
+#     - 2 × 12-bit SAR ADC
+#     - 1 x Internal Temperature Sensor
+# ------------------------------------------------------------------------------
+# WARNING:
+# This code carries a "It works on my setup" disclaimer!
+# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
+################################################################################

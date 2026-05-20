@@ -20,7 +20,45 @@
 
 ### Folder
 
-* [ESPHome Directory Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
+```txt
+homeassistant "set som CONFIG i Studio Code Server"
+  ├─ esphome
+  │    ├─ boards
+  │    │    ├─ esp32
+  │    │    │    ├─ c3_mini_espressif.yaml
+  │    │    │    ├─ poe_flash4_olimex.yaml
+  │    │    │    ├─ poe_iso_flash16_olimex.yaml
+  │    │    ├─ esp8266
+  │    │    ├─ rp2040
+  │    ├─ common
+  │    │    ├─ core
+  │    │    │    ├─ settings.yaml
+  │    │    ├─ network
+  │    │    │    ├─ lan.yaml
+  │    │    │    ├─ webserver.yaml
+  │    │    │    ├─ wifi.yaml
+  │    │    │    ├─ bluetooth_off.yaml    
+  │    ├─ includes
+  │    ├─ peripherals
+  │    │    ├─ spi
+  │    │    ├─ i2c
+  │    ├─ sensors
+  │    │    ├─ analogue
+  │    │    ├─ binary
+  │    │    ├─ bluetooth
+  │    │    ├─ core
+  │    │    ├─ i2c
+  │    │    ├─ one_wire
+  │    │    ├─ spi
+  │    │    ├─ uart
+  │    ├─ templates
+  │    ├─ secrets.yaml
+  │    ├─ .gitignore
+  │    │
+  │    ├─ esphome_device_tutorial.yaml
+```
+
+* [ESPHome Folder Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
 
 ### Files
 
