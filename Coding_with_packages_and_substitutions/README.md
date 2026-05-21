@@ -16,9 +16,12 @@
 * [YouTube Videos to learn from](./Sources/YouTube_Videos.md)
 * [GitHub Artikler and more](./Sources/GitHub_Artikler.md)
 
-## ESPHome Setup
+## Folder & Packages files Overview
 
-### Folder & Files Overview
+* Video clip to see
+  * [ESPHome Coding practices, tips and tricks, Tutorial 1, Foundation Part 2, 14:59 - Folders](https://www.youtube.com/watch?v=G9WRg6jk7xk&t=899s "Home Automator")
+
+### Folder
 
 ```txt
 homeassistant "set som CONFIG i Studio Code Server"
@@ -58,9 +61,14 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    ├─ esphome_device_tutorial.yaml
 ```
 
-* [ESPHome Folder Structure](./My_ESPHome_Setup/ESPHome_Directory_Structure.md)
+### Packages files
 
-### Files
+Let's start with OMJK's "external control cabinet", here I use an OLIMEX ESP32-POE with ESP32-D0WD V3 and 4 MB Flash, and I use the I2C interface for mcp23017 to connect push buttons and GPIO to control NeoPixel Light SK6812.
+The "external control cabinet" is powered via PoE, since I want to use PoE, I will therefore not use WiFi; but Ethernet (LAN).
+
+#### The MCU Board
+
+
 
 * [Common Core File](./My_ESPHome_Setup/Demofiles.md#common-core-file)
   * [settings.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommoncoresettingsyaml)
