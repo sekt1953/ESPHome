@@ -15,6 +15,10 @@
 * [ESP32 Development Boards](./Sources/ESP32_Development_Boards.md)
 * [YouTube Videos to learn from](./Sources/YouTube_Videos.md)
   * [Home Automator](./Sources/YouTube_Videos.md#home-automator)
+    * [Good Folder structure, 14:59](https://www.youtube.com/watch?v=G9WRg6jk7xk&t=899s "Home Automator")
+    * [Mudolar code with Package & Include: 1.57 to time: 16.19](https://youtu.be/52_ZJmTz3bs?t=116)
+    * []()
+    * []()
     * []()
 * [GitHub Artikler and more](./Sources/GitHub_Artikler.md)
 
@@ -73,7 +77,7 @@ homeassistant "set som CONFIG i Studio Code Server"
 #### Boards Folder
 
 * Video Clip:
-  * [See this Video, from time: 16.19 to time: 20.00](https://youtu.be/52_ZJmTz3bs?t=979)
+  * [See this Video, from time: 16.19 to time: 33.02](https://youtu.be/52_ZJmTz3bs?t=979)
 
 ```yaml
 ################################################################################
@@ -125,7 +129,16 @@ sensor:
     disabled_by_default: true
 ```
 
+#### Common Folder
+
+* Video Clip:
+  * [See this Video, from time: 40.44 to time: 40.44](https://youtu.be/52_ZJmTz3bs?t=2444)
+
+
 #### Tempalte File
+
+* Video Clip:
+  * [See this Video, from time: 33.10 to time: 40.44](https://youtu.be/52_ZJmTz3bs?t=1982)
 
 ```yaml
 ################################################################################
@@ -175,13 +188,21 @@ packages:
   # ----------------------------------------------------------------------------
   # Core packages
   # ----------------------------------------------------------------------------
-  board: !include boards/esp32/poe_ethernet_olimex.yaml 
+  board: !include boards/esp32/poe_ethernet_olimex.yaml
   settings: !include common/core/settings.yaml
   time: !include common/time/home_assistant.yaml
 
   # Network
   Ethernet: !include common/network/ethernet.yaml
   webserver: !include common/network/webserver.yaml
+
+################################################################################
+# Board Configuration
+################################################################################
+esphome:
+  comment: Hjulby Udvendig Betjenings Skab
+
+
 ```
 
 ## OLD
