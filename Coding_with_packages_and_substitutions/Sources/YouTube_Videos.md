@@ -13,7 +13,8 @@
   * [Tutorial 3 - Our First Device](https://youtu.be/eyEGK1eKyDM)
     * [GitHub: 3_our_first_device](https://github.com/homeautomatorza/esphome/tree/main/Coding_Practices_Tips_and_Tricks/3_our_first_device)
     * [Pictogrammers](https://pictogrammers.com/library/mdi/)
-  * [Creating a Room Sensor from Scratch](https://youtu.be/52_ZJmTz3bs)
+* [LIVE](https://www.youtube.com/@homeautomatorza/streams)
+  * [Let's rework our Room Sensor Package Code!](https://youtu.be/52_ZJmTz3bs)
 
 ## [SmartHome yourself](https://www.youtube.com/@Smarthomeyourself/playlists)
 
