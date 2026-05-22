@@ -253,7 +253,7 @@ switch:
 #### Common Network WiFi
 
 * Video Clip:
-  * [See this Video, from time: 1:15.21 to time: 1:50.00](https://youtu.be/52_ZJmTz3bs?t=4521)
+  * [See this Video, from time: 1:15:21 to time: 1:39:43](https://youtu.be/52_ZJmTz3bs?t=4521)
 
 ```yaml
 ################################################################################
