@@ -15,11 +15,6 @@
 * [ESP32 Development Boards](./Sources/ESP32_Development_Boards.md)
 * [YouTube Videos to learn from](./Sources/YouTube_Videos.md)
   * [Home Automator](./Sources/YouTube_Videos.md#home-automator)
-    * [Good Folder structure, 14:59](https://www.youtube.com/watch?v=G9WRg6jk7xk&t=899s "Home Automator")
-    * [Mudolar code with Package & Include: 1.57 to time: 16.19](https://youtu.be/52_ZJmTz3bs?t=116)
-    * []()
-    * []()
-    * []()
 * [GitHub Artikler and more](./Sources/GitHub_Artikler.md)
 
 ## Folder & Packages files Overview
@@ -72,12 +67,12 @@ homeassistant "set som CONFIG i Studio Code Server"
 * Let's start with OMJK's "external control cabinet", here I use an OLIMEX ESP32-POE with ESP32-D0WD V3 and 4 MB Flash, and I use the I2C interface for mcp23017 to connect push buttons and GPIO to control NeoPixel Light SK6812.
 * The "external control cabinet" is powered via PoE, since I want to use PoE, I will therefore not use WiFi; but Ethernet (LAN).
 * Video Clip:
-  * [See this Video, from time: 1.57 to time: 16.19](https://youtu.be/52_ZJmTz3bs?t=116)
+  * [See this Video, from time: 1:57 to time: 16:19](https://youtu.be/52_ZJmTz3bs?t=116)
 
 #### Boards Folder
 
 * Video Clip:
-  * [See this Video, from time: 16.19 to time: 33.02](https://youtu.be/52_ZJmTz3bs?t=979)
+  * [See this Video, from time: 16:19 to time: 33:02](https://youtu.be/52_ZJmTz3bs?t=979)
 
 ```yaml
 ################################################################################
@@ -89,7 +84,7 @@ homeassistant "set som CONFIG i Studio Code Server"
 # packages:
 #   board: !include boards/esp32/poe_ethernet_olimex.yaml 
 # ------------------------------------------------------------------------------
-# substitutions used:
+# Requires the following variables in the device file:
 #   device_internal_name
 #   device_sampling_time
 # ------------------------------------------------------------------------------
@@ -129,16 +124,136 @@ sensor:
     disabled_by_default: true
 ```
 
-#### Common Folder
+#### Common Core Settings file
 
 * Video Clip:
-  * [See this Video, from time: 40.44 to time: 40.44](https://youtu.be/52_ZJmTz3bs?t=2444)
+  * [See this Video, from time: 40:44 to time: 1:00.000](https://youtu.be/52_ZJmTz3bs?t=2444)
 
+```yaml
+################################################################################
+# Common Settings
+################################################################################
+# Usage:
+#   Add the following code to package section in the device file
+# ------------------------------------------------------------------------------
+# packages:
+#   settings: !include common/core/settings.yaml
+# ------------------------------------------------------------------------------
+# Requires the following variables in the device file:
+#   - device_internal_name
+#   - device_friendly_name
+#   - device_sampling_time
+################################################################################
+# Author: Pascal Parent
+# Company: Home Automator (ZA)
+# Web: https://www.youtube.com/@homeautomatorza
+# Version: 1.2.0
+# Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+################################################################################
+# WARNING:
+# This code carries a "It works on my setup" disclaimer!
+# Meaning that it works on my setup but it may not work on yours.
+################################################################################
+# ESPHome Configuration
+################################################################################
+esphome:
+  name: ${device_internal_name}
+  friendly_name: ${device_friendly_name}
+
+################################################################################
+# Enable logging
+################################################################################
+logger:
+  id: ${device_internal_name}_logger
+
+################################################################################
+# Enable Home Assistant API
+################################################################################
+api:
+  id: ${device_internal_name}_ha_api
+  reboot_timeout: 0s
+
+################################################################################
+# OTA Settings
+################################################################################
+ota:
+  - platform: esphome
+
+################################################################################
+# Safe Mode Settings
+################################################################################
+safe_mode:
+  boot_is_good_after: 1min
+  disabled: false
+  reboot_timeout: 10min
+  num_attempts: 5
+
+################################################################################
+# Network Settings
+################################################################################
+# Ensure mDNS is enabled
+mdns:
+  disabled: false
+
+# Disable IPV6
+network:
+    enable_ipv6: false
+
+################################################################################
+# Binary Sensors
+################################################################################
+binary_sensor:
+  # ESP Status Sensor
+  - platform: status
+    id: ${device_internal_name}_status
+    name: "Status"
+    icon: mdi:network-pos
+    disabled_by_default: true
+
+################################################################################
+# Text Sensors
+################################################################################
+text_sensor:
+  # ESP32 Version Sensor
+  - platform: version
+    id: ${device_internal_name}_version
+    name: "ESPHome Version"
+    hide_timestamp: true
+    disabled_by_default: true
+
+  - platform: uptime
+    name: "Uptime"
+
+################################################################################
+# Button
+################################################################################
+button: # Allows to remotely force into safe mode
+  - platform: safe_mode
+    id: ${device_internal_name}_safe_mode
+    name: Enter Safe Mode
+    disabled_by_default: true
+
+################################################################################
+# Switch
+################################################################################
+switch:
+  # Soft Restart the device
+  - platform: restart
+    id: ${device_internal_name}_device_restart
+    name: Restart
+    disabled_by_default: true
+
+  # Restart the device in Safe Mode
+  - platform: safe_mode
+    id: ${device_internal_name}_device_safe_mode
+    name: Use Safe Mode
+    disabled_by_default: true
+```
 
 #### Tempalte File
 
 * Video Clip:
-  * [See this Video, from time: 33.10 to time: 40.44](https://youtu.be/52_ZJmTz3bs?t=1982)
+  * [See this Video, from time: 33:10 to time: 40:44](https://youtu.be/52_ZJmTz3bs?t=1982)
 
 ```yaml
 ################################################################################
@@ -202,21 +317,4 @@ packages:
 esphome:
   comment: Hjulby Udvendig Betjenings Skab
 
-
 ```
-
-## OLD
-
-
-
-
-* [Common Core File](./My_ESPHome_Setup/Demofiles.md#common-core-file)
-  * [settings.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommoncoresettingsyaml)
-* [Common Network File](./My_ESPHome_Setup/Demofiles.md#common-network-file)
-  * [webserver.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkwebserveryaml)
-  * [wifi.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkwifiyaml)
-  * [bluetooth_off.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomecommonnetworkbluetooth_offyaml)
-* [The Board File](./My_ESPHome_Setup/Demofiles.md#the-cpu-board-file)
-  * [c3_mini_espressif.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomeboardsesp32c3_mini_espressifyaml)
-* [The Device File](./My_ESPHome_Setup/Demofiles.md#the-device-file)
-  * [esphome_device_tutorial.yaml](./My_ESPHome_Setup/Demofiles.md#homeassistantesphomeesphome_device_tutorialyaml)
