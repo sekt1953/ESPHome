@@ -15,6 +15,7 @@
     * [Pictogrammers](https://pictogrammers.com/library/mdi/)
 * [LIVE](https://www.youtube.com/@homeautomatorza/streams)
   * [Let's rework our Room Sensor Package Code!](https://youtu.be/52_ZJmTz3bs)
+    * [GitHub - 06 July 2024 - Let's rework our Room Sensor Package Code](https://github.com/homeautomatorza/esphome/tree/main/Livestreams/06%20July%202024%20-%20Let's%20rework%20our%20Room%20Sensor%20Package%20Code)
 
 ## [SmartHome yourself](https://www.youtube.com/@Smarthomeyourself/playlists)
 
