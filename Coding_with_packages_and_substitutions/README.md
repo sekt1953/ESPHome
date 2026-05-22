@@ -127,7 +127,7 @@ sensor:
 #### Common Core Settings file
 
 * Video Clip:
-  * [See this Video, from time: 40:44 to time: 1:00.000](https://youtu.be/52_ZJmTz3bs?t=2444)
+  * [See this Video, from time: 40:44 to time: 1:15.21](https://youtu.be/52_ZJmTz3bs?t=2444)
 
 ```yaml
 ################################################################################
@@ -249,6 +249,12 @@ switch:
     name: Use Safe Mode
     disabled_by_default: true
 ```
+
+#### Common 
+
+* Video Clip:
+  * [See this Video, from time: 1:15.21 to time: 1:50.00](https://youtu.be/52_ZJmTz3bs?t=4501)
+
 
 #### Tempalte File
 
