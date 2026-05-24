@@ -1,6 +1,6 @@
 # ESPHome
 
-## [Coding with packages and substitutions](./Coding_with_packages_and_substitutions/README.md)
+## [Coding with packages and substitutions inspired by Pascal Parent videos](./Coding_with_packages_and_substitutions/README.md)
 
 * Place where i will place my new ESPHome project, which is heavily inspired by the [Home Automator](https://www.youtube.com/@homeautomatorza/featured) video series ["Coding Practices, Tips and Tricks"](https://www.youtube.com/playlist?list=PLJ3MNJX_MOUnMWzUNDatN3LWAN8l99v5I)
 * Before you start using this guide, watch at least these videos :
@@ -11,6 +11,7 @@
 
 ### [Link here: ./Coding_with_packages_and_substitutions/README.md](./Coding_with_packages_and_substitutions/README.md)
 
-## OMJK
+## [Kodning med ESPHome for modelbane folk og andre]()
+
 
 ## House
