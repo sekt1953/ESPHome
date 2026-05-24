@@ -28,7 +28,7 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    ├─ secrets.yaml
   │    ├─ .gitignore
   │    │
-  │    ├─ esphome_device_tutorial.yaml
+  │    ├─ esphome_room_wifi_static_ip.yaml
 ```
 
 ## Mappe Beskrivelse
