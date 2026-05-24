@@ -22,8 +22,15 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    │    ├─ spi
   │    │    ├─ i2c
   │    ├─ sensors
-  │    │    ├─ light  
+  │    │    ├─ presence_detection
+  │    │    │    ├─ ld2410c.yaml
+  │    │    │    ├─ hc_sr501.yaml
+  │    │    ├─ distance
   │    │    ├─ environment
+  │    │    │    ├─ hlk_bh1750.yaml 
+  │    │    │    ├─ bme280.yaml 
+  │    │    │    ├─ bme680.yaml 
+  │    │    │    ├─ dth22.yaml
   │    ├─ templates
   │    ├─ secrets.yaml
   │    ├─ .gitignore
