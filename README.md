@@ -2,13 +2,38 @@
 
 ## [Kodning med ESPHome for modelbane folk og andre](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/README.md)
 
+### Hvorfor dette
+
 * Jeg er igang med at bygge elektronik, til OMJK modelbane sikkerhedssystem, som jeg vil bygge oven på Home Assistant & ESPHome
 * Indholdet her er til støtte for mine videoer, om at kode med ESPHome,  som var det Lego klodser vi arbejde med.
 * Jeg håber med YouTube videoerne og denne dokumentation, at kan få flere indvolveret i udviklings processen og velige holdelse af koden
 
-### [klik her for at fortsætte](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/README.md)
+### Antagelse
 
-###########################################################
+* Vi har en frisk installation af Home Assistant med følgende APPS installeret
+  * ESPHome Device Builder
+  * Studio Code Server
+  * File Editor
+* Vi har PC med en Chrome Browser 
+* PCsn og Home Assistant er forbundet til samme netwærk, og PCen har adgang til internettet.
+
+##" Kilder
+
+* [ESPHome Docs](https://esphome.io/components/)
+  * [Packages](https://esphome.io/components/packages/)
+  * [Security Best Practices](https://esphome.io/guides/security_best_practices/)
+
+## Indhold
+
+1. [Mappestruktur](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md "Klik Her")
+2. [Basic Filer]( "Klik Her")
+    1. [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/boards.md "Klik Her")
+    2. [common/core]()
+    3. [common/networks]()
+3. [secrets & .gitignore]()  
+
+
+
 
 ## [Coding with packages and substitutions inspired by Pascal Parent videos](./Coding_with_packages_and_substitutions/README.md)
 
@@ -18,8 +43,4 @@
 * and articles:
   * [olegtarasov - packages and substitutions tutorial](https://olegtarasov.me/esphome-packages-substitutions-tutorial/)
   * [ESPHome.io - Packages](https://esphome.io/components/packages/)
-
-
-## [Kodning med ESPHome for modelbane folk og andre]()
-
 
