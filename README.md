@@ -1,6 +1,6 @@
 # ESPHome
 
-## [Kodning med ESPHome for modelbane folk og andre](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/README.md)
+## Kodning med ESPHome for modelbane folk og andre
 
 ### Hvorfor dette
 
