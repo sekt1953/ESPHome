@@ -14,14 +14,19 @@
   * ESPHome Device Builder
   * Studio Code Server
   * File Editor
-* Vi har PC med en Chrome Browser 
+* Vi har PC med en Chrome Browser
 * PCsn og Home Assistant er forbundet til samme netwærk, og PCen har adgang til internettet.
+* At vi mindst 1 stk ESP32 dev board, med USB kabel for programering
 
-##" Kilder
+## Kilder
 
 * [ESPHome Docs](https://esphome.io/components/)
   * [Packages](https://esphome.io/components/packages/)
   * [Security Best Practices](https://esphome.io/guides/security_best_practices/)
+* Pascal Parent
+  * [homeautomatorza/esphome](https://github.com/homeautomatorza/esphome)
+  * [homeautomatorza/ESPHome-Modules](https://github.com/homeautomatorza/ESPHome-Modules)
+  * [Let's rework our Room Sensor Package Code!](https://youtu.be/52_ZJmTz3bs)
 
 ## Indhold
 
