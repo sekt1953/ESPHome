@@ -11,10 +11,15 @@
 ### Antagelse
 
 * Vi har en frisk installation af Home Assistant med følgende APPS installeret
+  * MariaDB
   * ESPHome Device Builder
   * Studio Code Server
-  * Advanced SSH & Web Terminal
   * File Editor
+  * Nice to Have
+    * HACS
+      * [How to install HACS in Home Assistant (2025)](https://youtu.be/TL2eqsjhmTE)
+    * Advanced SSH & Web Terminal
+      * [Advanced SSH and Web Terminal Installation and Configuration](https://youtu.be/fw69Tf9F5DU)
 * Vi har PC med en Chrome Browser
 * PCsn og Home Assistant er forbundet til samme netwærk, og PCen har adgang til internettet.
 * At vi mindst 1 stk ESP32 dev board, med USB kabel for programering
