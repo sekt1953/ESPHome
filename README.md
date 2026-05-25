@@ -39,10 +39,10 @@
 ## Indhold
 
 1. [Mappestruktur](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md "Klik Her")
-2. [Basic Filer]( "Klik Her")
-    1. [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/boards.md "Klik Her")
-    2. [common/core]()
-    3. [common/networks]()
+2. [Basic Filer](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md)
+    1. [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#boards "Klik Her")
+    2. [common/core](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-core "Klik Her")
+    3. [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
 3. [secrets & .gitignore]()  
 
 
