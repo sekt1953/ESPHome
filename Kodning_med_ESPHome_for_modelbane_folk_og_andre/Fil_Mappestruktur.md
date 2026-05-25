@@ -5,6 +5,7 @@
 ```txt
 homeassistant "set som CONFIG i Studio Code Server"
   ├─ esphome
+  │    ├─ archive
   │    ├─ archive_distribute
   │    ├─ boards
   │    │    ├─ esp32
@@ -16,11 +17,15 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    │    │    ├─ settings.yaml
   │    │    ├─ network
   │    │    │    ├─ lan.yaml
+  │    │    │    ├─ static_ip.yaml
   │    │    │    ├─ webserver.yaml
   │    │    │    ├─ wifi.yaml
   │    ├─ peripherals
-  │    │    ├─ spi
-  │    │    ├─ i2c
+  │    │    ├─ display
+  │    │    ├─ motor_controller
+  │    │    │    ├─ sporskifte.yaml
+  │    │    ├─ light_controller
+  │    │    │    ├─ neopixel.yaml
   │    ├─ sensors
   │    │    ├─ presence_detection
   │    │    │    ├─ ld2410c.yaml

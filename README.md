@@ -27,7 +27,9 @@
 ## Kilder
 
 * [ESPHome Docs](https://esphome.io/components/)
+  * [YAML Configuration in ESPHome](https://esphome.io/guides/yaml/)
   * [Packages](https://esphome.io/components/packages/)
+  * [Substitutions](https://esphome.io/components/substitutions/)
   * [Security Best Practices](https://esphome.io/guides/security_best_practices/)
 * Pascal Parent
   * [homeautomatorza/esphome](https://github.com/homeautomatorza/esphome)
