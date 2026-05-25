@@ -72,15 +72,15 @@ homeassistant "set som CONFIG i Studio Code Server"
     2. **homeassistant/esphome/secrets.yaml** som er for ESPHome secrets.
   * herunder taler vi kun on nr.2 **homeassistant/esphome/secrets.yaml**
 
-### esphome/secrets.yaml
+### homeassistant/esphome/secrets.yaml
 
-* Note! : password og SSID er kun for at vise hvordan
+* Note! : Password og SSID er kun for at vise hvordan
   * jeg bruger https://generate.plus/en/base64 32Byte for encryption_key
   * jeg bruger https://generate.plus/en/passwords for Password
 
 ```txt
 ################################################################################
-# Secrets sample file
+# homeassistant/esphome/secrets.yaml
 ################################################################################
 # Encryption Key Generator: base64 string 
 #     32Byte Base64 String https://generate.plus/en/base64
@@ -118,7 +118,7 @@ web_server_user: "admin"
 web_server_password: "8AArjvC5VYz8"
 ```
 
-### esphome/.gitignore
+### homeassistant/esphome/.gitignore
 
 ```yaml
 # Gitignore settings for ESPHome
