@@ -5,7 +5,7 @@
 ```txt
 homeassistant "set som CONFIG i Studio Code Server"
   ├─ esphome
-  │    ├─ archive_distribute
+  │    ├─ archive
   │    ├─ archive_distribute
   │    ├─ boards
   │    │    ├─ esp32
