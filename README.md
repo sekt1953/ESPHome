@@ -14,6 +14,7 @@
   * ESPHome Device Builder
   * Studio Code Server
   * File Editor
+  * Advanced SSH & Web Terminal
 * Vi har PC med en Chrome Browser
 * PCsn og Home Assistant er forbundet til samme netwærk, og PCen har adgang til internettet.
 * At vi mindst 1 stk ESP32 dev board, med USB kabel for programering
