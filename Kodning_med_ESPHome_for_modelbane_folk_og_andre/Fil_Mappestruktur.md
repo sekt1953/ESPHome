@@ -43,9 +43,19 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    ├─ esphome_study_wifi_static_ip.yaml
 ```
 
-## Mappe Beskrivelse
+## Kort Mappe Beskrivelse
 
-### esphome/archive_distribute
+* Mapper
+  * homeassistant/esphome/archive
+    * Her gemmer ESPHome slettede esphome filer
+  * homeassistant/esphome/archive_distribute/
+    * Her gemmes esphome filer som er sat i drift
+  * homeassistant/esphome/boards
+  * homeassistant/esphome/common/core/
+  * homeassistant/esphome/common/network/
+  * homeassistant/esphome/peripherals/
+  * homeassistant/esphome/sensors/
+  * homeassistant/esphome/
 
 ## Særlige filer
 
