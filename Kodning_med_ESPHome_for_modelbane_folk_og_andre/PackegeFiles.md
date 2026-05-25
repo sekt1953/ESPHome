@@ -384,15 +384,9 @@ wifi:
 captive_portal:
 ```
 
-## Peripherals
+## environment
 
-### esphome/peripherals/spi
-
-```txt
-
-```
-
-### esphome/sensors/i2c/bh1750.yaml
+### esphome/sensors/environment/bh1750.yaml
 
 ```txt
 ################################################################################
@@ -408,7 +402,7 @@ captive_portal:
 # -----------------------------------------------------------------------------
 # packages:
 #  bh1750: !include 
-#    file: sensors/i2c/bh1750.yaml
+#    file: sensors/environment/bh1750.yaml
 #    vars:
 #      i2c_address: 0x23
 # ------------------------------------------------------------------------------
@@ -467,69 +461,4 @@ text_sensor:
       }
       return brightness;
     update_interval: never
-```
-
-## Sensors
-
-### esphome/sensors/environment
-
-
-```txt
-
-```
-
-## ESPHome 
-
-### esphome/esphome-room-sensors_wifi_static_ip.yaml
-
-```txt
-################################################################################
-# Substitution Variables
-################################################################################
-substitutions:
-  device_internal_name: esphome_study_sensors
-  device_friendly_name: ESPHome Study Sensors
-  device_wifi_name: esphome-study-sensors
-  device_sampling_time: 30s
-  device_static_ip: 192.168.0.227
-
-################################################################################
-# Common Packages
-################################################################################
-packages:
-  # Include ESPHome Board Configuration 
-  # version: 2.0.9
-  board: !include 
-    file: boards/esp32/wroom_32d_hw_394.yaml
-    vars:
-      i2c_scan: true
-      uart_baud_rate: 115200
-      framework_version: recommended 
-
-  # Include Common Core ESPHome definitions
-  settings: !include 
-    file: common/core/settings.yaml
-    vars:
-      time_region: Europe/Copenhagen
-
-  # Include Common Network Definition
-  wifi: !include common/network/wifi.yaml
-  
-  webserver: !include common/network/webserver.yaml
-
-  ##############################################################################
-  # Sensors
-  ##############################################################################
-
-  bh1750: !include 
-    file: sensors/i2c/bh1750.yaml
-    vars:
-      i2c_address: 0x23
-
-################################################################################
-# Include files: static_ip
-################################################################################
-wifi:
-  <<: !include common/network/static_ip.yaml
-
 ```

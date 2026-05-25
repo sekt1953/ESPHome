@@ -27,7 +27,7 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    │    ├─ light_controller
   │    │    │    ├─ neopixel.yaml
   │    ├─ sensors
-  │    │    ├─ presence_detection
+  │    │    ├─ presence
   │    │    │    ├─ ld2410c.yaml
   │    │    │    ├─ hc_sr501.yaml
   │    │    ├─ distance
@@ -36,6 +36,7 @@ homeassistant "set som CONFIG i Studio Code Server"
   │    │    │    ├─ bme280.yaml 
   │    │    │    ├─ bme680.yaml 
   │    │    │    ├─ dth22.yaml
+  │    │    │    ├─ ds18b20.yaml
   │    ├─ templates
   │    ├─ secrets.yaml
   │    ├─ .gitignore
