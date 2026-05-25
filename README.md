@@ -44,7 +44,7 @@
     2. [common/core](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-core "Klik Her")
     3. [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
     3. [secrets & .gitignore](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#særlige-filer)  
-3. [ESPHome files]()
+3. [ESPHome files](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md)
     1. [esphome_study_wifi_dynamic_ip.yaml](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_dynamic_ipyaml)
     2. [esphome_study_wifi_static_ip.yaml](Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_static_ipyaml)
 
