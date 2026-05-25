@@ -45,8 +45,8 @@
     3. [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
     3. [secrets & .gitignore](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#særlige-filer)  
 3. [ESPHome files]()
-    * [esphome_study_wifi_static_ip.yaml](Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_static_ipyaml)
-    * [esphome_study_wifi_dynamic_ip.yaml](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_dynamic_ipyaml)
+    1. [esphome_study_wifi_dynamic_ip.yaml](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_dynamic_ipyaml)
+    2. [esphome_study_wifi_static_ip.yaml](Kodning_med_ESPHome_for_modelbane_folk_og_andre/ESPHome_files.md#esphome_study_wifi_static_ipyaml)
 
 ## [Coding with packages and substitutions inspired by Pascal Parent videos](./Coding_with_packages_and_substitutions/README.md)
 
