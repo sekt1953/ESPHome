@@ -49,6 +49,12 @@ homeassistant "set som CONFIG i Studio Code Server"
 
 ## Særlige filer
 
+* Advarsel !!!
+  * Der er 2 stk secrets.yaml i en Home Assistant installation
+    1. homeassistant/secrets.yaml som er for Home Assistant secrets.
+    2. homeassistant/esphome/secrets.yaml som er for ESPHome secrets.
+  * herunder taler vi kun on nr.2 homeassistant/esphome/secrets.yaml
+
 ### esphome/secrets.yaml
 
 * Note! : password og SSID er kun for at vise hvordan
@@ -93,4 +99,14 @@ dns_address: 1.1.1.1,8.8.8.8
 # Webserver
 web_server_user: "admin"
 web_server_password: "8AArjvC5VYz8"
+```
+
+### esphome/.gitignore
+
+```yaml
+# Gitignore settings for ESPHome
+# This is an example and may include too much for your use-case.
+# You can modify this file to suit your needs.
+/.esphome/
+/secrets.yaml
 ```
