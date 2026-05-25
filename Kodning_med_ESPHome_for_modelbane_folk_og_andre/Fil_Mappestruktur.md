@@ -62,7 +62,6 @@ homeassistant "set som CONFIG i Studio Code Server"
       display-, motor_controller-, light_controller-package,  
       alså output-package, som bruges til at styre enheder.
   * homeassistant/esphome/sensors/
-
   * homeassistant/esphome/
 
 ## Særlige filer
