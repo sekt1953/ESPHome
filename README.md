@@ -43,7 +43,7 @@
     1. [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#boards "Klik Her")
     2. [common/core](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-core "Klik Her")
     3. [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
-3. [secrets & .gitignore]()  
+3. [secrets & .gitignore](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#særlige-filer)  
 
 
 
