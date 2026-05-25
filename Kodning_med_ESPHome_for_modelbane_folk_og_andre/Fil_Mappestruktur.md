@@ -49,21 +49,28 @@ homeassistant "set som CONFIG i Studio Code Server"
   * homeassistant/esphome/archive
     * Her gemmer ESPHome slettede esphome filer
   * homeassistant/esphome/archive_distribute/
-    * Her gemmes esphome filer som er sat i drift
+    * Her placeres esphome filer som er sat i drift
   * homeassistant/esphome/boards
+    * Her placeres boards package-filer, i deres respektive MCU mapper.
   * homeassistant/esphome/common/core/
+    * Her placeres common/core package-filer.
   * homeassistant/esphome/common/network/
+    * Her placeres common/network package-filer.
   * homeassistant/esphome/peripherals/
+    * Her placeres, i deres respektive mapper, peripherals package-filer, som:  
+      display-, motor_controller-, light_controller-package,  
+      alså output-package, som bruges til at styre enheder.
   * homeassistant/esphome/sensors/
+
   * homeassistant/esphome/
 
 ## Særlige filer
 
-* Advarsel !!!
+* **Advarsel !!!**
   * Der er 2 stk secrets.yaml i en Home Assistant installation
-    1. homeassistant/secrets.yaml som er for Home Assistant secrets.
-    2. homeassistant/esphome/secrets.yaml som er for ESPHome secrets.
-  * herunder taler vi kun on nr.2 homeassistant/esphome/secrets.yaml
+    1. **homeassistant/secrets.yaml** som er for Home Assistant secrets.
+    2. **homeassistant/esphome/secrets.yaml** som er for ESPHome secrets.
+  * herunder taler vi kun on nr.2 **homeassistant/esphome/secrets.yaml**
 
 ### esphome/secrets.yaml
 
