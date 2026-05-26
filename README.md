@@ -39,11 +39,13 @@
 ## Indhold
 
 1. [Mappestruktur](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md "Klik Her")
+    * [Mapper og Filer](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#mapper-og-filer)
+    * [Kort Mappe Beskrivelse](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#kort-mappe-beskrivelse)
+    * [Særlige filer - secrets.yaml & .gitignore](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#særlige-filer)
 2. [Basic Filer](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md)
-    1. [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#boards "Klik Her")
-    2. [common/core](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-core "Klik Her")
-    3. [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
-    4. [secrets & .gitignore](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Fil_Mappestruktur.md#særlige-filer)
+    * [boards](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#boards "Klik Her")
+    * [common/core](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-core "Klik Her")
+    * [common/networks](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/PackegeFiles.md#common-network)
 3. [peripherals](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Packet_Peripherals.md)
     1. [display](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Packet_Peripherals.md)
     2. [motor_controller](./Kodning_med_ESPHome_for_modelbane_folk_og_andre/Packet_Peripherals.md)
