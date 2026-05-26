@@ -31,7 +31,7 @@
   * [Packages](https://esphome.io/components/packages/)
   * [Substitutions](https://esphome.io/components/substitutions/)
   * [Security Best Practices](https://esphome.io/guides/security_best_practices/)
-* Pascal Parent
+* Pascal Parent YouTube & GitHub link:
   * [homeautomatorza/esphome](https://github.com/homeautomatorza/esphome)
   * [homeautomatorza/ESPHome-Modules](https://github.com/homeautomatorza/ESPHome-Modules)
   * [Let's rework our Room Sensor Package Code!](https://youtu.be/52_ZJmTz3bs)
