@@ -1,4 +1,4 @@
-# Packages filer
+# Basic Packages
 
 ## Boards
 
@@ -7,6 +7,10 @@
 ```txt
 ################################################################################
 # ESP32D-Wroom-HW-394 used USB-C
+################################################################################
+# PinOut; 
+#   https://www.espboards.dev/img/S36MIHQRiM-900.png
+#
 ################################################################################
 # Anvendelse:
 #   Tilføj følgende kode til pakkeafsnittet i enhedsfilen
@@ -19,39 +23,17 @@
 #       uart_baud_rate: 115200
 #       framework_version: recommended 
 # ------------------------------------------------------------------------------
-# Note about Framework: https://esphome.io/components/esp32/#framework   
-# framework_version:
-#  - dev         : Use the latest commit, note this may break at any time
-#  - latest      : Use the latest release, even if it hasn’t been recommended yet.
-#  - recommended : Use the recommended framework version.  
-# ------------------------------------------------------------------------------
 # Krav:
 #   Kræver følgende erstatning i enhedsfilen:
 #     - device_internal_name
 #     - device_sampling_time
 #
-################################################################################
-# PinOut; 
-#   https://www.espboards.dev/img/S36MIHQRiM-900.png
-#
-# Safe Pins to Use:
-#  -GPIO13	avoid using as GPIO if JTAG is needed.
-#   GPIO14	produce spurious signals at boot.
-#   GPIO16	
-#   GPIO17	
-#  -GPIO18  SPI/CLK
-#  -GPIO19  SPI/MISO
-#  -GPIO21  I2C/SDA
-#  -GPIO22  I2C/SCL
-#  -GPIO23  SPI/MOSI
-#  -GPIO25
-#  -GPIO26
-#  -GPIO27
-#  -GPIO32
-#  -GPIO33
-#   GPIO34	only suitable for analog/digital input.
-#   GPIO35	only suitable for input.
-#
+# Note about Framework: https://esphome.io/components/esp32/#framework
+# ------------------------------------------------------------------------------
+# framework_version:
+#  - dev         : Use the latest commit, note this may break at any time
+#  - latest      : Use the latest release, even if it hasn’t been recommended yet.
+#  - recommended : Use the recommended framework version.  
 ################################################################################
 # Author: Svenn-Erik K. Thomsen
 # Web: https://www.youtube.com/@sekt1953
