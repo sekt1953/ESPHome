@@ -8,12 +8,17 @@
 ################################################################################
 # ESP32D-Wroom-HW-394 used USB-C
 ################################################################################
-# PinOut; 
+# Board PinOut; 
 #   https://www.espboards.dev/img/S36MIHQRiM-900.png
 #
 ################################################################################
-# Anvendelse:
-#   Tilføj følgende kode til pakkeafsnittet i enhedsfilen
+# Usage:
+#   Add the following code to package section in the device file
+# ------------------------------------------------------------------------------
+# substitutions:
+#   device_internal_name: 
+#   device_sampling_time: 
+#   uart_baud_rate: 115200
 # ------------------------------------------------------------------------------
 # packages:
 #   board: !include 
@@ -22,12 +27,8 @@
 #       i2c_scan: true
 #       uart_baud_rate: 115200
 #       framework_version: recommended 
-# ------------------------------------------------------------------------------
-# Krav:
-#   Kræver følgende erstatning i enhedsfilen:
-#     - device_internal_name
-#     - device_sampling_time
 #
+# ------------------------------------------------------------------------------
 # Note about Framework: https://esphome.io/components/esp32/#framework
 # ------------------------------------------------------------------------------
 # framework_version:
@@ -106,22 +107,21 @@ sensor:
 # Usage:
 #   Add the following code to package section in the device file
 # ------------------------------------------------------------------------------
+# substitutions:
+#   device_friendly_name:
+#   device_internal_name:
+#   device_sampling_time:
+# ------------------------------------------------------------------------------
 # packages:
 #   settings: !include 
 #     file: common/core/settings.yaml
 #     vars:
 #        time_region: Europe/Copenhagen
 # -----------------------------------------------------------------------------      
-# Notes:
-#     - Uses the following substitutions from the project file:
-#       - device_friendly_name   
-#       - device_internal_name
-#       - device_sampling_time
-#       - time_region
-#     - Uses the following from the secrets file:
-#       - api_encryption_key
-#       - web_server_password
-# -----------------------------------------------------------------------------      
+# Uses the following from the ESPHome secrets.yaml file:
+#   api_encryption_key:
+#   ota_password:
+################################################################################
 # Author: Pascal Parent
 # Company: Home Automator (ZA)
 # Web: https://www.youtube.com/@homeautomatorza
@@ -129,6 +129,10 @@ sensor:
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+# Notes:
+#     - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
 # Use at your own risks!
 ################################################################################
@@ -162,7 +166,7 @@ api:
 # OTA Settings
 ota:
   platform: esphome
-  password: !secret web_server_password
+  password: !secret ota_password
 
 # ----------------------------------------------------------------------------- 
 # Safe Mode
@@ -232,7 +236,7 @@ switch:
 ################################################################################
 # Stacic IP Package for WiFi & Ethernet Include file
 ################################################################################
-# Usage:
+# Requirement: 
 #   Add the following code to package section in the device file
 # ------------------------------------------------------------------------------
 # Include for WiFi:
@@ -243,26 +247,27 @@ switch:
 # ethernet:
 #   <<: !include common/network/static_ip.yaml
 # ------------------------------------------------------------------------------
-# Requirement: 
-#   - Requires the following substitution in the device file:
-#       - device_static_ip:
+# substitutions:
+#   device_static_ip:
+# -----------------------------------------------------------------------------      
+# Uses the following from the ESPHome secrets.yaml file:
 #
-#   - Requires the following from the secrets file:
-#       - gateway_address
-#       - subnet_address
+#   gateway_address
+#   subnet_address
 #
 ################################################################################
 # Author: Svenn-Erik K. Thomsen
 # YouTube: https://www.youtube.com/@sekt1953
 # Version: 1.0.0
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
-################################################################################
+# ------------------------------------------------------------------------------
+# WARNING:
+# ------------------------------------------------------------------------------
 # Notes:
 #     - ikke Tested OK
 # ------------------------------------------------------------------------------
-# WARNING:
 # This code carries a "It works on my setup" disclaimer!
-# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
 ################################################################################
 static_ip:
   static_ip: ${device_static_ip}
