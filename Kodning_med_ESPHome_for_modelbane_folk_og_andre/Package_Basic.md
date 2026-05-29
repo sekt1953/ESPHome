@@ -12,8 +12,8 @@
 #   https://www.espboards.dev/img/S36MIHQRiM-900.png
 #
 ################################################################################
-# Usage:
-#   Add the following code to package section in the device file
+# Requirement: 
+#   Add the following code to substitutions & package section in the device file
 # ------------------------------------------------------------------------------
 # substitutions:
 #   device_internal_name: 
@@ -27,7 +27,6 @@
 #       i2c_scan: true
 #       uart_baud_rate: 115200
 #       framework_version: recommended 
-#
 # ------------------------------------------------------------------------------
 # Note about Framework: https://esphome.io/components/esp32/#framework
 # ------------------------------------------------------------------------------
@@ -41,14 +40,13 @@
 # Version: 1.0.0
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # ------------------------------------------------------------------------------
-# Notes:
-#     - ikke Tested OK
+# WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
+# This code carries a "It works on my setup" disclaimer!
+# Use at your own risks!
 ################################################################################
-# Board Specific Configurations
-# ------------------------------------------------------------------------------
-# This specification file is specific to the ESP32 S3 N16R8 development board!
-# Do not try to use another!
-# ------------------------------------------------------------------------------
 esp32:
   board: esp32dev
   framework:
@@ -104,8 +102,8 @@ sensor:
 ################################################################################
 # Common Core Settings
 ################################################################################
-# Usage:
-#   Add the following code to package section in the device file
+# Requirement: 
+#   Add the following code to substitutions & package section in the device file
 # ------------------------------------------------------------------------------
 # substitutions:
 #   device_friendly_name:
@@ -130,8 +128,7 @@ sensor:
 # ------------------------------------------------------------------------------
 # WARNING:
 # ------------------------------------------------------------------------------
-# Notes:
-#     - ikke Tested OK
+#   - ikke Tested OK
 # ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
 # Use at your own risks!
@@ -237,8 +234,11 @@ switch:
 # Stacic IP Package for WiFi & Ethernet Include file
 ################################################################################
 # Requirement: 
-#   Add the following code to package section in the device file
+#   Add the following code to substitutions & base section in the device file
 # ------------------------------------------------------------------------------
+# substitutions:
+#   device_static_ip:
+# -----------------------------------------------------------------------------      
 # Include for WiFi:
 # wifi:
 #   <<: !include common/network/static_ip.yaml
@@ -247,14 +247,9 @@ switch:
 # ethernet:
 #   <<: !include common/network/static_ip.yaml
 # ------------------------------------------------------------------------------
-# substitutions:
-#   device_static_ip:
-# -----------------------------------------------------------------------------      
 # Uses the following from the ESPHome secrets.yaml file:
-#
 #   gateway_address
 #   subnet_address
-#
 ################################################################################
 # Author: Svenn-Erik K. Thomsen
 # YouTube: https://www.youtube.com/@sekt1953
@@ -263,8 +258,7 @@ switch:
 # ------------------------------------------------------------------------------
 # WARNING:
 # ------------------------------------------------------------------------------
-# Notes:
-#     - ikke Tested OK
+#   - ikke Tested OK
 # ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
 # Use at your own risks!
@@ -283,14 +277,15 @@ static_ip:
 ################################################################################
 # Reference(s): https://esphome.io/components/web_server.html
 # ------------------------------------------------------------------------------  
-# Usage:
+# Requirement: 
 #   Add the following code to package section in the device file
 # ------------------------------------------------------------------------------
 # packages:
 #   webserver: !include common/network/webserver.yaml
 # ------------------------------------------------------------------------------
-# Requirement:
-#     - Requires either WiFi or Ethernet to be enabled on the board
+#   Requires either WiFi or Ethernet to be enabled on the board
+# ------------------------------------------------------------------------------
+# Uses the following from the ESPHome secrets.yaml file:
 #     - Uses the following from the secrets file:
 #       - web_server_user
 #       - web_server_password
@@ -307,6 +302,9 @@ static_ip:
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
 # Use at your own risks!
 ################################################################################
@@ -327,33 +325,31 @@ web_server:
 ################################################################################
 # WiFi Package for ESP32
 ################################################################################
-# Usage:
+# Requirement: 
 #   Add the following code to package section in the device file
+# ------------------------------------------------------------------------------
+# substitutions:
+#   device_wifi_name:
 # ------------------------------------------------------------------------------
 # packages:
 #   wifi: !include common/network/wifi_dynamicip.yaml
 # ------------------------------------------------------------------------------
-# Requirement: 
-#   - Requires the following substitution in the device file:
-#       - device_wifi_name:
-#
-#   - Requires the following from the secrets file:
-#       - wifi_ssid:
-#       - wifi_password;
-#       - ap_password:
-#
+# Uses the following from the ESPHome secrets.yaml file:
+#   wifi_ssid:
+#   wifi_password;
+#   ap_password:
 ################################################################################
 # Author: Svenn-Erik K. Thomsen
 # YouTube: https://www.youtube.com/@sekt1953
 # Version: 1.0.0
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
-################################################################################
-# Notes:
-#     - ikke Tested OK
 # ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
-# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
 ################################################################################
 wifi:
   networks:
