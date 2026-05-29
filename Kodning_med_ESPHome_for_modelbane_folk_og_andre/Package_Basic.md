@@ -275,7 +275,8 @@ static_ip:
 ################################################################################
 # Web Server Package for ESP32
 ################################################################################
-# Reference(s): https://esphome.io/components/web_server.html
+# Reference(s):
+#   https://esphome.io/components/web_server.html
 # ------------------------------------------------------------------------------  
 # Requirement: 
 #   Add the following code to package section in the device file
@@ -286,14 +287,13 @@ static_ip:
 #   Requires either WiFi or Ethernet to be enabled on the board
 # ------------------------------------------------------------------------------
 # Uses the following from the ESPHome secrets.yaml file:
-#     - Uses the following from the secrets file:
-#       - web_server_user
-#       - web_server_password
+#   web_server_user
+#   web_server_password
 #
 # Warning:
-#     - On low SRAM or PSRAM boards, avoid using the Web Server with Bluetooth,
-#       or Voice Assistant, it may cause instability or reboot loops, 
-#       rather switch the radio off.
+#   On low SRAM or PSRAM boards, avoid using the Web Server with Bluetooth,
+#   or Voice Assistant, it may cause instability or reboot loops, 
+#   rather switch the radio off.
 # ------------------------------------------------------------------------------     
 # Author: Pascal Parent
 # Company: Home Automator (ZA)
@@ -301,7 +301,7 @@ static_ip:
 # Version: 1.0.0
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # ------------------------------------------------------------------------------
-# WARNING:
+# Warning:
 # ------------------------------------------------------------------------------
 #   - ikke Tested OK
 # ------------------------------------------------------------------------------

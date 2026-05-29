@@ -10,10 +10,12 @@
 ################################################################################
 # Source: 
 #   https://naylampmechatronics.com/img/cms/001080/HLK-LD2410C_datasheet.pdf
-# -----------------------------------------------------------------------------
-# Usage:
-#   Add the following code to package section in the device file changing the 
-#   I2C Address to the appropriate one.
+################################################################################
+# Requirement:
+#   Add the following code to package section in the device file 
+# ------------------------------------------------------------------------------
+# substitutions:
+#   ld2410_presence_pin: GPIOXX
 # -----------------------------------------------------------------------------
 # packages:
 #  ld2410c: !include 
@@ -29,9 +31,15 @@
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # Reference: https://esphome.io/components/sensor/ld2410.html
 # ------------------------------------------------------------------------------
+# Change by:
+#   20260529 12:28 Svenn-Erik K. Thomsen
+# ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
-# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
 ################################################################################
 ld2410:
   uart_id: ${uart_port}
@@ -57,7 +65,7 @@ binary_sensor:
     id: ${device_internal_name}_ld2410_gpio_presence
     name: LD2410 GPIO Presence
     icon: mdi:motion-sensor
-    pin: ${presence_pin}
+    pin: ${ld2410_presence_pin}
     device_class: presence
 
 sensor:
@@ -132,9 +140,9 @@ select:
 #   - https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2022/01/ESP32-BH1750-Wiring-Diagram.png?w=672&quality=100&strip=all&ssl=1
 #
 ################################################################################
-# Usage:
-#   Add the following code to package section in the device file changing the 
-#   I2C Address to the appropriate one.
+# Requirement: 
+#   Add the following code to package section in the device file and changing:
+#   * the I2C Address to the appropriate one.
 # -----------------------------------------------------------------------------
 # packages:
 #  bh1750: !include 
@@ -149,9 +157,15 @@ select:
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # Reference: https://esphome.io/components/sensor/bh1750.html
 # ------------------------------------------------------------------------------
+# Change by:
+#   20260529 12:28 Svenn-Erik K. Thomsen
+# ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
-# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
 ################################################################################
 sensor:  
   - platform: bh1750
@@ -205,9 +219,10 @@ text_sensor:
 ################################################################################
 # DS18B20 Temperature Sensor
 ################################################################################
-# Usage:
-#   Add the following code to package section in the device file changing the 
-#   one wire GPIO to the appropriate one.
+# Requirement: 
+#   Add the following code to package section in the device file
+#   Add the following code to package section in the device file and changing:
+#   * the One-Wire GPIO to the appropriate one
 # -----------------------------------------------------------------------------
 # packages:
 #  ds18b20: !include 
@@ -223,9 +238,15 @@ text_sensor:
 # Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
 # Reference: https://esphome.io/components/sensor/dallas_temp.html 
 # ------------------------------------------------------------------------------
+# Change by:
+#   20260529 12:28 Svenn-Erik K. Thomsen
+# ------------------------------------------------------------------------------
 # WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
 # This code carries a "It works on my setup" disclaimer!
-# Meaning that it works on my setup but it may not work on yours.
+# Use at your own risks!
 ################################################################################
 one_wire:
   - platform: gpio
@@ -254,11 +275,4 @@ sensor:
     state_class: measurement
     update_interval: ${device_sampling_time}
     disabled_by_default: true
-```
-
-
-
-
-```yaml
-
 ```
