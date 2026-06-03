@@ -2,9 +2,79 @@
 
 ## Boards
 
+### esphome/boards/esp32/p4_devkit_olimex.yaml
+
+```yaml
+################################################################################
+# ESP32-P4-DevKit Olimex
+################################################################################
+# Datasheet: 
+#   https://www.olimex.com/Products/IoT/ESP32-P4/ESP32-P4-DevKit/open-source-hardware
+# Board PinOut; 
+#   https://github.com/OLIMEX/ESP32-P4-DevKit/blob/main/HARDWARE/ESP32-P4-DevKit-Rev.C/ESP32-P4-DevKit_Rev_C.pdf
+#
+################################################################################
+# Requirement: 
+#   Add the following code to substitutions & package section in the device file
+# ------------------------------------------------------------------------------
+# substitutions:
+#   device_internal_name: 
+#   device_sampling_time: 
+#   uart_baud_rate: 115200
+# ------------------------------------------------------------------------------
+# packages:
+#   board: !include 
+#     file: boards/esp32/p4_devkit_olimex.yaml
+#     vars:
+#       i2c_scan: true
+#       uart_baud_rate: 115200
+#       framework_version: recommended 
+# ------------------------------------------------------------------------------
+# Note about Framework: https://esphome.io/components/esp32/#framework
+# ------------------------------------------------------------------------------
+# framework_version:
+#  - dev         : Use the latest commit, note this may break at any time
+#  - latest      : Use the latest release, even if it hasn’t been recommended yet.
+#  - recommended : Use the recommended framework version.  
+################################################################################
+# Author: Svenn-Erik K. Thomsen
+# Web: https://www.youtube.com/@sekt1953
+# Version: 1.0.0
+# Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+# ------------------------------------------------------------------------------
+# WARNING:
+# ------------------------------------------------------------------------------
+#   - ikke Tested OK
+# ------------------------------------------------------------------------------
+# This code carries a "It works on my setup" disclaimer!
+# Use at your own risks!
+################################################################################
+esphome:
+  comment: "Olimex ESP32-P4-DevKit"
+
+esp32:
+  board: esp32-p4-evboard
+  variant: esp32p4
+  flash_size: 16MB
+  cpu_frequency: 400MHZ
+  framework:
+    type: esp-idf
+
+# Status led
+status_led:
+  id: ${device_internal_name}_status_led
+  pin:
+    number: GPIO2
+    inverted: false
+
+logger:
+  hardware_uart: UART0
+
+```
+
 ### esphome/boards/esp32/wroom_32d_hw_394.yaml
 
-```txt
+```yaml
 ################################################################################
 # ESP32D-Wroom-HW-394 used USB-C
 ################################################################################
@@ -98,7 +168,7 @@ sensor:
 
 ### esphome/common/core/settings.yaml
 
-```txt
+```yaml
 ################################################################################
 # Common Core Settings
 ################################################################################
@@ -229,7 +299,7 @@ switch:
 
 ### esphome/common/network/static_ip.yaml
 
-```txt
+```yaml
 ################################################################################
 # Stacic IP Package for WiFi & Ethernet Include file
 ################################################################################
@@ -271,7 +341,7 @@ static_ip:
 
 ### esphome/common/network/webserver.yaml
 
-```txt
+```yaml
 ################################################################################
 # Web Server Package for ESP32
 ################################################################################
@@ -321,7 +391,7 @@ web_server:
 
 ### esphome/common/network/wifi.yaml.yaml
 
-```txt
+```yaml
 ################################################################################
 # WiFi Package for ESP32
 ################################################################################
