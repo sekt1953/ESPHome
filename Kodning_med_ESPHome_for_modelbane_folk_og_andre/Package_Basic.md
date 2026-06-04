@@ -4,6 +4,8 @@
 
 ### esphome/boards/esp32/p4_devkit_olimex.yaml
 
+![](./Images/Olimex_ESP32-P4-DevKit-Extensions.png)
+
 ```yaml
 ################################################################################
 # ESP32-P4-DevKit Olimex
