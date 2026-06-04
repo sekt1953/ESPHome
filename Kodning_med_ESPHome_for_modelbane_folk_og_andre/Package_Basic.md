@@ -10,6 +10,10 @@
 ################################################################################
 # Datasheet: 
 #   https://www.olimex.com/Products/IoT/ESP32-P4/ESP32-P4-DevKit/open-source-hardware
+#   https://devices.esphome.io/devices/waveshare-esp32-p4-eth/
+#   https://github.com/willumpie82/esphome/blob/50e9e836afc937330db95f8fc10698999480e510/esp32-p4.yaml
+#   https://github.com/willumpie82/esphome/blob/dev/esp32-p4.yaml
+#
 # Board PinOut; 
 #   https://github.com/OLIMEX/ESP32-P4-DevKit/blob/main/HARDWARE/ESP32-P4-DevKit-Rev.C/ESP32-P4-DevKit_Rev_C.pdf
 #
@@ -69,6 +73,16 @@ status_led:
 
 logger:
   hardware_uart: UART0
+
+i2c:
+  - id: bus_a
+    sda: GPIO7
+    scl: GPIO8
+    scan: true
+  - id: bus_b
+    sda: GPIO19
+    scl: GPIO18
+    scan: true
 
 ```
 
