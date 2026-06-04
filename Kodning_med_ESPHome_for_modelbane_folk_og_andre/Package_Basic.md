@@ -4,7 +4,7 @@
 
 ### esphome/boards/esp32/p4_devkit_olimex.yaml
 
-![](./Images/Olimex_ESP32-P4-DevKit-Extensions.png)
+![Olimex_ESP32-P4-DevKit-Extensions.png](./Images/Olimex_ESP32-P4-DevKit-Extensions.png)
 
 ```yaml
 ################################################################################
@@ -89,6 +89,8 @@ i2c:
 ```
 
 ### esphome/boards/esp32/wroom_32d_hw_394.yaml
+
+![ESP32_wroom_32d_hw_394.png](./Images/ESP32_wroom_32d_hw_394.png)
 
 ```yaml
 ################################################################################
