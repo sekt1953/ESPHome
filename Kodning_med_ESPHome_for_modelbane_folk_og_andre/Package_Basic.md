@@ -315,6 +315,48 @@ switch:
 
 ## Common Network
 
+### esphome/common/network/ethernet_ip101.yaml
+
+```yaml
+################################################################################
+# Olimex ESP32-P4 Ethernet IP101
+################################################################################
+# Common Network - Ethernet IP101
+################################################################################
+# Source: 
+#   - https://esphome.io/components/ethernet/
+# ------------------------------------------------------------------------------
+# Usage:
+#   Add the following code to package section in the device file
+# ------------------------------------------------------------------------------
+# packages:
+#   board: !include 
+#     file: common/network/ethernet_ip101.yaml
+#
+################################################################################
+# Author: Svenn-Erik K. Thomsen
+# YouTube: https://www.youtube.com/@sekt1953
+# Version: 1.0.0
+# Licence: CCO 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+################################################################################
+# Notes:
+#     - ikke Tested OK
+# ------------------------------------------------------------------------------
+# WARNING:
+# This code carries a "It works on my setup" disclaimer!
+# Meaning that it works on my setup but it may not work on yours.
+################################################################################
+ethernet:
+  type: IP101
+  mdc_pin: GPIO31
+  mdio_pin: GPIO52
+  power_pin: GPIO51
+  clk:
+    mode: CLK_EXT_IN
+    pin: GPIO50
+  phy_addr: 1
+```
+
 ### esphome/common/network/static_ip.yaml
 
 ```yaml
